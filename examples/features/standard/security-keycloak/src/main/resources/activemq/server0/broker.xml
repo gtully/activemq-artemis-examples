@@ -48,6 +48,12 @@ under the License.
             <permission roles="amq" type="consume"/>
          </security-setting>
 
+         <security-setting match="mops.#">
+            <permission roles="amq" type="view"/>
+            <permission roles="amq" type="edit"/>
+            <permission roles="guest" type="view"/>
+            <permission roles="guest" type="edit"/>
+         </security-setting>
       </security-settings>
 
       <addresses>
